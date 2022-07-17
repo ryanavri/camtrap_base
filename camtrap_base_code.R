@@ -1,18 +1,18 @@
 #Preparation####
 #install exiftool for the first time
 library("exiftoolr")
-#run only for the first time the code below, to download latest version in your computer
-#install_exiftool("D:/Ryan/camtrapR/Exif") #change path to your directory
-#after download finish, rename exiftool(-K) to exiftool.exe
-#directing R to run exiftool in your specified folder
-exiftoolPath("D:/Ryan/camtrapR/Exif/win_exe")
-Sys.which("exiftool") #if works, it will shows your directory
 
 #load more library
 library("camtrapR")  #camtrap related function
 library("tidyverse") #modifying data frame 
 library("lubridate") #modifying date and time format
 
+#run only for the first time the code below, to download latest version in your computer
+#install_exiftool("D:/Ryan/camtrapR/Exif") #change path to your directory
+#after download finish, rename exiftool(-K) to exiftool.exe
+#directing R to run exiftool in your specified folder
+exiftoolPath("D:/Ryan/camtrapR/Exif/win_exe")
+Sys.which("exiftool") #if works, it will shows your directory
 
 #set to your folder of camera trap
 wd_raw <- "D:/Ryan/camtrapR/Trial/SMTB/raw_vid"
@@ -48,20 +48,20 @@ detection %>%
 
 ###optional features####
 #add copyright
-copyrightTagToAdd <- "FFI`s IP & BKSDA Kalbar"
-addCopyrightTag(inDir = wd_raw,
-                copyrightTag = copyrightTagToAdd,
-                askFirst = FALSE)
+#copyrightTagToAdd <- "FFI`s IP & BKSDA Kalbar"
+#addCopyrightTag(inDir = wd_raw,
+#                copyrightTag = copyrightTagToAdd,
+ #               askFirst = FALSE)
 #read all metadata in your folder
-metadatatable <- exifTagNames(inDir = wd_raw)
+#metadatatable <- exifTagNames(inDir = wd_raw)
 
 #add more metadata into file
-rec_table3 <- recordTable(inDir  = wd_raw,
-                          IDfrom = "directory",
-                          additionalMetadataTags = c("EXIF:Model", "EXIF:Make"),
-                          timeZone = "Asia/Jakarta",
-                          video  = list(file_formats = c("jpg", "mp4"),
-                                        dateTimeTag  = "QuickTime:CreateDate")
+#rec_table3 <- recordTable(inDir  = wd_raw,
+#                          IDfrom = "directory",
+#                         additionalMetadataTags = c("EXIF:Model", "EXIF:Make"),
+#                        timeZone = "Asia/Jakarta",
+#                       video  = list(file_formats = c("jpg", "mp4"),
+#                                        dateTimeTag  = "QuickTime:CreateDate")
 )
 
 
