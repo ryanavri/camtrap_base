@@ -1,0 +1,6 @@
+﻿Region,Site,Session,Station,Longitude,Latitude,Setup_date,Setup_time,End_date,End_time,Type,Notes,Problem1_from,Problem1_to
+Westeros,Dorne,WS2020,RKGA_002,101.40379,-2.20870,06-Oct-20,15:53,15-Nov-20,13:39,Single,,,
+Westeros,Dorne,WS2020,RKGA_063,101.39488,-2.24376,09-Dec-20,14:52,19-Feb-21,21:02,Single,,,
+Westeros,North,WS2021,TB04,101.45673,-2.23775,30-Oct-20,20:00,22-Jan-21,11:44,Single,,,
+Westeros,North,WS2022,TB05,101.45102,-2.20082,30-Oct-20,9:43,23-Jan-21,11:38,Single,,,
+Westeros,North,WS2023,TB10,101.42867,-2.23618,29-Oct-20,15:40,22-Jan-21,16:42,Single,,,
