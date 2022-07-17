@@ -1,0 +1,1 @@
+# camtrap_base
