@@ -25,7 +25,7 @@ effort <- read.csv("data/Station.csv")
 rec_table1 <- recordTable(inDir  = wd_raw,
                           IDfrom = "directory",
                           timeZone = "Asia/Jakarta",
-                          video  = list(file_formats = c("jpg", "mp4"),
+                          video  = list(file_formats = c("jpg", "mp4", "mov"),
                                         dateTimeTag  = "QuickTime:CreateDate")
 )
 
